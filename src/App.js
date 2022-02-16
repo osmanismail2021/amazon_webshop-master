@@ -19,8 +19,16 @@ function App() {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
 
+        dispatch({
+          type: "SET_USER",
+          user: authUser
+        })
+
       } else {
-        
+        dispatch({
+          type: "SET_USER",
+          user: null
+        })
       }
     })
   }, []);
@@ -28,20 +36,21 @@ function App() {
   return (
 
     <Router>
-
-     
-
-        <Header/>
-        <Routes>
-        
-          <Route path="/"  element={<Home/>} />
+      <Routes>
+        <Route path="/"  element={<Home/>} >
+          <Header/>
+            <Home/>
+        </Route>
           
-          <Route path="/Checkout"  element={<Checkout />}  />
+        <Route path="/checkout"  element={<Checkout/>} >
+          <Header/>
+            <Checkout/>
+        </Route>
 
-          <Route path="/Login" element={<Login />}/>
-
-        </Routes>
-
+        <Route path="/login" element={<Login/>} >
+          <Login/>
+        </Route>
+      </Routes>
     </Router>
 
   );

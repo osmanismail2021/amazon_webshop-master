@@ -1,18 +1,5 @@
 export const initialState = {
-    basket: [{
-        id: "12321341",
-        title: "Aileen Violine 4/4 Anfänger Set, Geige Kinder Erwachsene mit Gebrauchsanweisung",
-        price: 62.99,
-        rating: 4,
-        image:"https://m.media-amazon.com/images/I/71FlGh5YwQS._AC_SL1500_.jpg"
-    },
-    {
-        id: "12321341",
-        title: "Aileen Violine 4/4 Anfänger Set, Geige Kinder Erwachsene mit Gebrauchsanweisung",
-        price: 62.99,
-        rating: 4,
-        image:"https://m.media-amazon.com/images/I/71FlGh5YwQS._AC_SL1500_.jpg"
-    }],
+    basket: [],
     user: null,
     
 };
@@ -22,6 +9,11 @@ basket?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
     switch(action.type) {
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user,
+            }
         case 'ADD_TO_BASKET':
             // Logic for adding item to basket
         return { 

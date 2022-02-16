@@ -2,8 +2,6 @@ import React from 'react'
 import { useStateValue } from './StateProvider'
 import './Checkout.css';
 import CheckoutProduct from './CheckoutProduct';
-
-import "./Checkout.css";
 import Subtotal from "./Subtotal";
 
 function Checkout() {
@@ -55,4 +53,4 @@ function Checkout() {
   );
 }
 // react-currency-format
-export default Checkout
+export default Checkout;
