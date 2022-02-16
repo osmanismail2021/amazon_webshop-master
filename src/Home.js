@@ -38,7 +38,7 @@ function Home() {
         id="56456325"
         title="Xiaomi 11 Lite 5G NE6,67 leistungsstarkes Smartphone ohne Vertrag+Kopfhörer, Dolby Vision, 90 Hz AMOLED Display, 6GB RAM+128GB Speicher,Dual-SIM, Android 11, Black"
         price={319.90}
-        rating={4,5}
+        rating={5}
         image="https://m.media-amazon.com/images/I/51B9LW2wB4L._AC_SL1001_.jpg"
         />
         <Product
