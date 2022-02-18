@@ -1,27 +1,29 @@
-import React, { useEffect } from "react";
 import "./App.css";
-import {BrowserRouter as Router, Route, Routes}
- from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import Login from "./Login";
-import { useStateValue } from "./StateProvider";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ContactUs from './contactForm';
+import React, { useEffect } from "react";
 import { auth } from "./firebase";
+import { useStateValue } from "./StateProvider";
+
 
 
 
 
 function App() {
-  const [{basket}, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
 
   useEffect(() => {
-    auth.onAuthStateChanged((authUser) => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
 
         dispatch({
           type: "SET_USER",
-          user: authUser
+          user: authUser,
         })
 
       } else {
@@ -30,28 +32,32 @@ function App() {
           user: null
         })
       }
-    })
+    });
+    return () => {
+      unsubscribe();
+    };
   }, []);
+
+  
+  
 
   return (
 
     <Router>
+    <Header/>
       <Routes>
-        <Route path="/"  element={<Home/>} >
-          <Header/>
-            <Home/>
-        </Route>
-          
-        <Route path="/checkout"  element={<Checkout/>} >
-          <Header/>
-            <Checkout/>
-        </Route>
-
-        <Route path="/login" element={<Login/>} >
-          <Login/>
-        </Route>
+      
+        <Route path="/"  element={<Home/>} />
+        <Route path="/Checkout"  element={<Checkout/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/contactForm" element={<ContactUs/>} />
+        
       </Routes>
     </Router>
+
+    
+
+
 
   );
 

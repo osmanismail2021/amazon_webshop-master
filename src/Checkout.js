@@ -3,11 +3,15 @@ import { useStateValue } from './StateProvider'
 import './Checkout.css';
 import CheckoutProduct from './CheckoutProduct';
 import Subtotal from "./Subtotal";
+import Header from "./Header"
 
 function Checkout() {
   const [{basket}] = useStateValue();
   return (
+    
+
     <div className="checkout">
+    
       <div className="checkout_left">
       <img
         className="checkout_ad"
