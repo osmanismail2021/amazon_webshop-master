@@ -80,7 +80,7 @@ function Header() {
       </Link>
 
       <Link to="/contactForm" className="header__link">
-        <div className="contact__form">
+        <div className="header__contactform">
         <ContactMailIcon />
         </div>
       </Link>

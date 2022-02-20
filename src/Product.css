@@ -3,12 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    max-height: 400px;
+    border-radius: 5px;
+    max-height: 500px;
     min-width: 100px;
     width: 100%;
     padding: 20px;
     margin: 10px;
-    background-color: white;
+    background-color: rgb(235, 238, 240);
     z-index: 1;
 }
 
@@ -31,8 +32,72 @@
     margin-bottom: 15px
 }
 
-.product > button {
+/* .product > button {
     background-color: #f0c14b;
-    border: 1px solid;
+    border: 2px solid;
+    border-radius: 5px;
     border-color: #a88734 #9c7e31 #846a29;
+}
+
+.product > button:hover {
+    color: black;
+} */
+
+.product > button {
+    --c: black;
+    color: var(--c);
+    font-size: 16px;
+    background-color: goldenrod;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.product > button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.product > button:hover {
+    color: goldenrod;
+}
+
+.product > button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.product > button span:nth-child(1) {
+    --n: 1;
+}
+
+.product > button span:nth-child(2) {
+    --n: 2;
+}
+
+.product > button span:nth-child(3) {
+    --n: 3;
+}
+
+.product > button span:nth-child(4) {
+    --n: 4;
 }

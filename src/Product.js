@@ -39,7 +39,11 @@ import { useStateValue } from './StateProvider';
     </div>
     
     <img src={image} alt="" />
-    <button onClick={addToBasket}>Add to basket</button>
+    
+    <button onClick={addToBasket}>Add to basket
+    <span></span><span></span><span></span><span></span>
+    </button>
+    
   </div>
   );
   

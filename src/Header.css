@@ -13,16 +13,23 @@
   .header__search {
     display: flex;
     flex: 1;
+    height: 28px;
+    
   }
   .header__searchInput {
-    height: 12px;
-    padding: 10px;
-    border: none;
+    height: 30px;
+    padding: 5px;
+    border: solid;
+    border-radius: 5px ;
     width: 100%;
+    
   }
   .header__searchIcon {
     padding: 5px;
-    height: 22px !important;
+    height: 30px !important;
+    width: 30px !important;
+    border: solid;
+    border-radius: 5px;
     background-color: #cd9042;
   }
   .header__nav {
@@ -33,6 +40,11 @@
     color: white;
     text-decoration: none;
   }
+
+  .header__link:hover {
+        color: goldenrod;
+  }
+  
   .header_option {
     display: flex;
     flex-direction: column;
@@ -54,3 +66,7 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+
+ .header__contactform {
+    margin-right: 10px;
+ }
