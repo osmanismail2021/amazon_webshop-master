@@ -20,7 +20,7 @@ function Home() {
     />
 
     {/* Product id,title, price, rating, image */}
-    <div className='home_row' data-aos="zoom-in-up">
+    <div className='home_row' data-aos="zoom-in-up" data-aos="fade-up" data-aos-duration="1200">
       <Product
         id="12321341"
         title="Aileen Violine 4/4 Anfänger Set, Geige Kinder Erwachsene mit Gebrauchsanweisung"
@@ -46,7 +46,7 @@ function Home() {
     
     </div>
 
-    <div className="home_row" data-aos="zoom-in-up">
+    <div className="home_row" data-aos="zoom-in-up"  data-aos="fade-up" data-aos-duration="1200">
 
     <Product
         id="56456325"
@@ -78,7 +78,7 @@ function Home() {
         />
     </div>
 
-    <div className="home_row" data-aos="zoom-in-up">
+    <div className="home_row" data-aos="zoom-in-up" data-aos="fade-up" data-aos-duration="1200">
     <Product
         id="127895456"
         title="LC-POWER LC-M49-DQHD-120-C-Q 49 Zoll (124,46 cm) QLED Curved Gaming Monitor (5120 x 1440 Pixel, Dual WFHD 32:9 Format, 120Hz, 1800R,Adaptive Sync), schwarz"
