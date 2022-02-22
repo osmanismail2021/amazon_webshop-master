@@ -33,6 +33,13 @@ function Home() {
         rating={4}
         image="https://m.media-amazon.com/images/I/716kTJI4jtL._AC_SL1500_.jpg"
         />
+        <Product
+        id="495380456"
+        title="Echo Studio – Smarter High Fidelity-Lautsprecher mit 3D-Audio und Alexa"
+        price={199.99}
+        rating={4}
+        image="https://m.media-amazon.com/images/I/61mAVYcG5TL._AC_SL1000_.jpg"
+        />
     {/* Product */}
     
     </div>
@@ -60,10 +67,24 @@ function Home() {
         rating={5}
         image="https://m.media-amazon.com/images/I/61UqFhCVDLL._AC_SL1000_.jpg"
         />
+        <Product
+        id="56456325"
+        title="TOZO T6 Bluetooth Kopfhörer Kabellos In Ear Ohrhörer Sport Touch Control Wireless Bluetooth Headset mit kabellosem Ladecase Mikrofon Premium Sound Bass Schwarz"
+        price={25.99}
+        rating={5}
+        image="https://m.media-amazon.com/images/I/71gtHnQGfQL._AC_SL1500_.jpg"
+        />
     </div>
 
     <div className="home_row">
     <Product
+        id="127895456"
+        title="LC-POWER LC-M49-DQHD-120-C-Q 49 Zoll (124,46 cm) QLED Curved Gaming Monitor (5120 x 1440 Pixel, Dual WFHD 32:9 Format, 120Hz, 1800R,Adaptive Sync), schwarz"
+        price={1159}
+        rating={4}
+        image="https://m.media-amazon.com/images/I/61A2tx5C4lL._AC_SL1500_.jpg"
+        />
+        <Product
         id="12365456"
         title="Samsung Odyssey Ultra Wide Curved Gaming Monitor C49HG90, 49 Zoll, VA-Panel, QLED, Bildwiederholrate 144 Hz, Reaktionszeit 1 ms"
         price={729}

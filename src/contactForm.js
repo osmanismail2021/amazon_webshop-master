@@ -34,9 +34,10 @@ export default function ContactUs() {
   }
 
   return (
-    <div className="container border border-dark rounded mt-2">
+    <div className="container pt-5">
+      <h1><br/></h1>
       <form onSubmit={sendEmail}>
-        <div className="row pt-5 mx-auto">
+        <div className="row pt-3 mx-auto">
           <div className="col-8 form-group mx-auto">
             <input
               type="text"
@@ -75,28 +76,14 @@ export default function ContactUs() {
           <div className="col-8 pt-3 mx-auto text-center">
             <input
               type="submit"
-              className="btn btn-info"
+              className="btn btn-info btn-danger"
               value="Send Message"
             ></input>
         </div>
 
-        <div className="col-8 pt-3 mx-auto text-center ">
-            <input
-              id="btn"
-              type="submit"
-              className="btn btn-success"
-              value="Mail Me"
-              onClick={() => (window.location = "mailto:osmannaciismail@gmail.com")}
-            ></input>
-        </div>
+        
 
-        {/* <button
-        className="d-grid gap-2 col-1 d-md-block justify-content-md-center"
-        id="btn"
-        onClick={() => (window.location = "mailto:osmannaciismail@gmail.com")}
-      >
-        Mail Me
-      </button> */}
+        
         </div>
       </form>
       
