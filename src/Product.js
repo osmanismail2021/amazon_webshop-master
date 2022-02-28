@@ -22,7 +22,7 @@ import { useStateValue } from './StateProvider';
  
 
   return (
-  <div className="product">
+  <div className="product" data-aos="zoom-in-up" data-aos="fade-up" data-aos-duration="1500">
     <div className="product_info">
         <p>{title}</p>
         <p className="product__price">

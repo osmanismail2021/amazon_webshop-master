@@ -29,7 +29,9 @@
     max-height: 200px;
     width: 100%;
     object-fit: contain;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    margin-top: 50px;
+    
 }
 
 /* .product > button {
@@ -46,11 +48,11 @@
 .product > button {
     --c: black;
     color: var(--c);
-    font-size: 16px;
+    font-size: 12px;
     background-color: goldenrod;
-    border: 0.3em solid var(--c);
+    border: 2px solid var(--c);
     border-radius: 0.5em;
-    width: 12em;
+    width: 11em;
     height: 2em;
     text-transform: uppercase;
     font-weight: bold;

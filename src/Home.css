@@ -1,8 +1,36 @@
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
+  
+}
+
+.cards {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    
+  }
+
+  /* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+  }
+
 .home {
-    max-width: 1850px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(200, 207, 207);;
+    background-color: rgb(200, 207, 207);
     
     
     
@@ -14,13 +42,20 @@
     margin-left: 5px;
     margin-right: 5px;
     
+    
 }
+
+
+
+
+  
 
 .home_image {
     width: 100%;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     z-index: -1;
-    margin-bottom: -250px;
+    margin-bottom: -275px;
     margin-top: 54px;
+    
 }
 
